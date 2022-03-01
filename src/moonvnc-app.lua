@@ -7,12 +7,9 @@
 --]]
 
 function ui.btn_connect:on_clicked()
+    vnc:close()
     local port = ui.entry_port.text
-    
-    if port == '' then
-        port = "5900"
-    end 
-
+    if port == '' then port = "5900" end
     vnc:open_host(ui.entry_server.text, port)
     vnc:grab_focus()
     ui.stack:set_visible_child_name('server_view')
