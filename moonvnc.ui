@@ -106,21 +106,6 @@
             <property name="margin-end">20</property>
             <property name="transition-type">slide-left</property>
             <child>
-              <object class="GtkBox" id="box">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="homogeneous">True</property>
-                <child>
-                  <placeholder/>
-                </child>
-              </object>
-              <packing>
-                <property name="name">server_view</property>
-                <property name="title" translatable="yes">server_view</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -307,6 +292,26 @@
               <packing>
                 <property name="name">new_connection</property>
                 <property name="title" translatable="yes">new_connection</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="box">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="orientation">vertical</property>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+              <packing>
+                <property name="name">server_view</property>
+                <property name="title" translatable="yes">server_view</property>
                 <property name="position">1</property>
               </packing>
             </child>
