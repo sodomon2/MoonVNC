@@ -7,7 +7,7 @@ BINDIR ?= $(PREFIX)/bin
 
 SRC = moonvnc.lua src/moonvnc-app.lua src/moonvnc-vnc.lua
 
-moonterm: 
+moonvnc: 
 	$(LUASTATIC) $(SRC) -l$(LUA) -I$(LUA_INCLUDE)
 	@strip moonvnc
 
