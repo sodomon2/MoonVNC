@@ -8,10 +8,10 @@
 
 local help =[[
 MoonVNC usage:
-		moonvnc [hostname] [port]
+	moonvnc [hostname] [port]
 
 example:
-		moonvnc localhost 5900
+	moonvnc localhost 5900
 ]]
 
 main_window	= Gtk.Window {
