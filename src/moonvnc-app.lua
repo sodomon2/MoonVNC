@@ -34,6 +34,7 @@ function app:on_activate()
 	elseif #arg ~= 1 then
 		main_window.child.box:add(Gvnc)
 		vnc:connect(arg[1], arg[2], main_window)
+		main_window.title = ("%s - MoonVNC"):format(arg[1])
 		main_window:show_all()
 		self:add_window(main_window)
 	end

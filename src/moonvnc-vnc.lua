@@ -12,7 +12,6 @@ function vnc:connect(server, port, window)
 	Gvnc:open_host(server, port)
 	Gvnc:grab_focus()
 	window:resize(Gvnc:get_width(), Gvnc:get_height())
-	window.title = ("%s - MoonVNC"):format(server)
 	Gvnc:realize()
 end
 
